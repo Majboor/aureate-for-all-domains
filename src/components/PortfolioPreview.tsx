@@ -12,7 +12,7 @@ const PortfolioPreview = () => {
     },
     {
       title: "sustainable fashion",
-      result: "built for hailey bieber's favorite brand",
+      result: "built for a cult-favorite label",
       description: "elevated storytelling through immersive visual design"
     },
     {
@@ -23,7 +23,7 @@ const PortfolioPreview = () => {
   ];
 
   return (
-    <section className="relative py-0" ref={ref}>
+    <section className="relative py-0" id="work" ref={ref}>
       {/* Asymmetrical Grid Layout */}
       <div className="grid lg:grid-cols-12 min-h-screen">
         {/* Left Content with Staggered Animation */}

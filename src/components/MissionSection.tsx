@@ -2,7 +2,7 @@ import creativeTools from "@/assets/creative-tools.jpg";
 
 const MissionSection = () => {
   return (
-    <section className="relative">
+    <section className="relative" id="about">
       {/* Asymmetrical Split Layout */}
       <div className="grid lg:grid-cols-2 min-h-screen">
         {/* Left - Content */}

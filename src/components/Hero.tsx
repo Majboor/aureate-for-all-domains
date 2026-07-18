@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
+import { scrollToSection } from "@/lib/scroll";
 import heroImage from "@/assets/hero-minimal.jpg";
 
 const Hero = () => {
@@ -38,16 +39,18 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
+                onClick={() => scrollToSection("contact")}
                 className="bg-foreground text-background hover:bg-foreground/90 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium hover-scale-gentle group w-full sm:w-auto"
               >
                 book consultation
                 <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
               </Button>
-              <Button 
-                size="lg" 
-                variant="ghost" 
+              <Button
+                size="lg"
+                variant="ghost"
+                onClick={() => scrollToSection("work")}
                 className="text-muted-foreground hover:text-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium hover-glow backdrop-blur-sm w-full sm:w-auto"
               >
                 view our work
