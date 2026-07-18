@@ -7,6 +7,7 @@ import ApproachSection from "@/components/ApproachSection";
 import MissionSection from "@/components/MissionSection";
 import FitSection from "@/components/FitSection";
 import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
         <MissionSection />
         <FitSection />
         <CTASection />
+        <Footer />
       </div>
     </SmoothScroll>
   );
